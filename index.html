@@ -656,7 +656,9 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Mobile Application Development - React Native</h5>
+                  <h5 class="h5">
+                    Mobile Application Development - React Native
+                  </h5>
                   <data value="80">80%</data>
                 </div>
 
@@ -1187,11 +1189,12 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form action="#" class="form" data-form id="contactForm">
               <div class="input-wrapper">
                 <input
                   type="text"
                   name="fullname"
+                  id="fullname"
                   class="form-input"
                   placeholder="Full name"
                   required
@@ -1201,6 +1204,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="email"
                   class="form-input"
                   placeholder="Email address"
                   required
@@ -1210,6 +1214,7 @@
 
               <textarea
                 name="message"
+                id="message"
                 class="form-input"
                 placeholder="Your Message"
                 required
@@ -1220,6 +1225,9 @@
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
+
+              <!-- Optional: success/error text -->
+              <p id="formStatus" style="margin-top: 10px"></p>
             </form>
           </section>
         </article>
