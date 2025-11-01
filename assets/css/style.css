@@ -2132,3 +2132,33 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* ===== Skills legend: mobile optimizations ===== */
+@media (max-width: 480px) {
+  .skills-legend {
+    flex-wrap: wrap; /* line break allow */
+    gap: 8px; /* tighter spacing */
+    padding: 12px; /* thora compact */
+    border-radius: 12px;
+  }
+
+  .skills-legend .legend-title {
+    display: block; /* "Levels:" upar aa jaye */
+    width: 100%;
+    margin: 0 0 4px 0;
+    font-size: var(--fs-7);
+  }
+
+  .chip {
+    padding: 5px 9px; /* smaller chip */
+    font-size: var(--fs-8); /* chhota text */
+    line-height: 1.1;
+  }
+}
+
+/* Optional: super-narrow phones */
+@media (max-width: 360px) {
+  .chip {
+    padding: 4px 8px;
+  }
+}
